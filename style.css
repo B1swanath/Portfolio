@@ -385,5 +385,47 @@ span{
 }
 
 
+/* SKILLS */
 
+.skills{
+    min-height: auto;
+    padding-bottom: 7rem;
+}
+
+.skills p{
+    font-size: 1.5rem;
+    margin: 2rem 0 3rem;
+}
+
+.skills .skills-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-row .skills-item{
+    width: 30rem;
+    border: 0.2rem solid white;
+    border-radius: 2.5rem;
+    padding: 5rem;
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills-row .skills-item:hover{
+    border: 0.2rem solid crimson;
+}
+
+.skills-item i{
+    font-size: 8.5rem;
+    color: white;
+    transition: 0.5rem;
+}
+.skills-item i:hover{
+    color: crimson;
+}
+
+.skills-item span{
+    text-align: center;
+}
 
