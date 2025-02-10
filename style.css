@@ -552,7 +552,7 @@ span{
 .carousel-control-prev, .carousel-control-next {
     position: absolute;
     bottom: 10%;
-    transform: translateY(28.5rem);
+    transform: translateY(26.2rem);
     font-size: 30px;
     padding: 10px;
     cursor: pointer;
