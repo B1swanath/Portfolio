@@ -21,13 +21,13 @@ html{
 }
 
 header{
-    margin-top: 20px;
+    /* margin-top: 20px; */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem 9%;
-    background: transparent;
+    padding: 2rem 9%;
+    background: rgba(0,0,0, 0.8);
     filter: drop-shadow(10px);
     display: flex;
     justify-content: space-between;
@@ -384,12 +384,66 @@ span{
     box-shadow: 0 0 25px crimson;
 }
 
+/* POPUP */
+
+#popupDialog {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-111.5%, 28%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 2px solid crimson;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+    visibility: hidden;
+    width: 1150px;
+    height: 600px;
+}
+
+.popb{
+    text-align: right;
+}
+
+.popbtn{
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: crimson;
+    font-weight: 600;
+    border: 2px solid crimson;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.popbtn:hover{
+    transform: scale3d(1.03);
+    background-color: crimson;
+    color: black;
+    box-shadow: 0 0 25px crimson;
+}
 
 /* SKILLS */
 
 .skills{
     min-height: auto;
     padding-bottom: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.s-heading{
+    font-size: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
 }
 
 .skills p{
@@ -429,3 +483,112 @@ span{
     text-align: center;
 }
 
+/* PROJECTS */
+
+.projects .heading{
+    margin-top: 3rem;
+}
+
+.projects-menu{
+    display: flex;
+    justify-content: space-between;
+    border: 0.2rem solid crimson;
+    border-radius: 2.5rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    margin: 2rem;
+}
+.projects-menu a{
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/* .projects-list{
+    padding: 2.5rem 7rem;
+}
+
+.projects-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects-item{
+    position: relative;
+}
+
+.projects-item .overlay{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+} */
+
+.projectm1 {
+    position: relative;
+    width: 100%;
+    /* max-width: 1000px; */
+    margin: auto;
+    overflow: hidden;
+}
+
+.projects-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.projects-list {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem 7rem;
+}
+
+.projects-list img {
+    width: 400px;
+    height: 250px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    position: absolute;
+    bottom: 10%;
+    transform: translateY(28.5rem);
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel-control-prev {
+    left: 10px;
+    height: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+    height: 10px;
+}
+
+.carousel-control-prev .bx, .carousel-control-next .bx{
+    color: white;
+}
+.carousel-control-prev i:hover , .carousel-control-next i:hover {
+    color: crimson;
+}
+
+.projects-row{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+
+.projects-item{
+    position: relative;
+}
+
+.projects-item .overlay{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
