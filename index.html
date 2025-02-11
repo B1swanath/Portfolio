@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.iconify.design/iconify-icon/2.3.0/iconify-icon.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
@@ -36,7 +37,7 @@
         <div class="home-content">
             <h1>Hi, It's <span>Biswanath Tudu</span></h1>
             <h3 class="typing-text">I'm a <span></span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint possimus aut est aliquam temporibus voluptate, commodi magnam sapiente esse excepturi libero dolorum? Quaerat sit illo exercitationem porro nobis aut asperiores?</p>
+            <p>I specialize in building dynamic, responsive websites and web applications using HTML, CSS, JavaScript, and React. I’m passionate about creating seamless user experiences and writing clean, maintainable code.</p>
             <div class="social-icons">
                 <a href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
@@ -58,17 +59,17 @@
     <section class="about" id="about">
         <h2 class="heading">About <span>Me</span></h2>
 
+        <div class="about-main">
         <div class="about-img">
-            <img src="img/Profile1.jpg" alt="">
+            <img src="img/Profile1.jpg" alt="profile-img">
             <spam class="circle-spin"></spam>
         </div>
 
         <div class="about-content">
             <h3>UI/UX Designer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem iste officia illum culpa doloribus itaque mollitia quos soluta modi maxime quod vero harum porro facilis sint, sunt eaque, ipsam optio.</p>
+            <p>I’m constantly learning and exploring new web technologies to keep my skills sharp, and I’m particularly passionate about building high-performance, accessible websites that work on any device.</p>
 
             <div>
-                <!-- <a href="#" class="btn2">Read more</a> -->
                 <button class="btn2" onclick="openPop()">Read more</button>
                 <div id="popupDialog">
                     <div class="popb">
@@ -77,6 +78,7 @@
                     <p>About</p>                   
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
@@ -102,13 +104,13 @@
                         <i class='bx bxl-bootstrap' ></i>
                         <span>Bootstrap</span>
                     </div>
+                </div>
+                
+                <div class="skills-row">
                     <div class="skills-item">
                         <i class='bx bxl-javascript'></i>
                         <span>JavaScript</span>
                     </div>
-                </div>
-                
-                <div class="skills-row">
                     <div class="skills-item">
                         <i class='bx bxl-react' ></i>
                         <span>React.js</span>
@@ -117,15 +119,25 @@
                         <i class='bx bxl-wordpress' ></i>
                         <span>WordPress</span>
                     </div>
+                </div>
+                
+                <div class="skills-row">
                     <div class="skills-item">
-                        <i class='bx bxl-figma' ></i>
+                        <i class='bx bxl-figma'></i>
+                        <img class="icon-figma" src="img/icon-figma.png" alt="icon-figma" height="85px">
                         <span>Figma</span>
                     </div>
-                    <div class="skills-item">
-                        <i class='bx bxl-adobe' ></i>
-                        <span>AdobePS</span>
+                    <div class="skills-item si-Ps">
+                        <img class="icon-Ps-bw" src="img/icons-Ps.png" alt="icon-Ps-bw" height="85px">
+                        <img class="icon-Ps-c" src="img/icons-Ps-c.png" alt="icon-Ps-c" height="85px">
+                        <span>AdobePs</span>
                     </div>
-                </div>    
+                    <div class="skills-item">
+                        <img class="icon-Ai-bw" src="img/icons-Ai.png" alt="icon-Ai-bw" height="85px">
+                        <img class="icon-Ai-c" src="img/icons-Ai-c.png" alt="icons-Ai-c" height="85px">
+                        <span>AdobeI</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -142,56 +154,6 @@
             <a href="#">Figma</a>
         </div>
 
-        <!-- <div class="projects-list">
-            <div class="projects-column">
-
-                <div class="projects-row">
-
-                    <div class="projects-item">
-                        <img src="img/Unreal.png" alt="Unreal" height="250px" width="400px">
-                        <div class="overlay">
-                            <h4><a href="#">Preview</a></h4>
-                            <h4><a href="#">Source Code</a></h4>
-                        </div>
-                    </div>
-
-                    <div class="projects-item">
-                        <img src="img/JavaScript.png" alt="Unreal" height="250px" width="400px">
-                        <div class="overlay">
-                            <h4><a href="#">Preview</a></h4>
-                            <h4><a href="#">Source Code</a></h4>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="projects-column">
-
-                <div class="projects-row">
-
-                    <div class="projects-item">
-                        <img src="img/Zpotify.png" alt="Unreal" height="250px" width="400px">
-                        <div class="overlay">
-                            <h4><a href="#">Preview</a></h4>
-                            <h4><a href="#">Source Code</a></h4>
-                        </div>
-                    </div>
-
-                    <div class="projects-item">
-                        <img src="img/JavaScript.png" alt="Unreal" height="250px" width="400px">
-                        <div class="overlay">
-                            <h4><a href="#">Preview</a></h4>
-                            <h4><a href="#">Source Code</a></h4>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </div> -->
-
         <div id="projectm1" class="projectm1">
 
             <!-- Carousel Slides -->
@@ -203,18 +165,18 @@
                         <div class="projects-row">
 
                             <div class="projects-item">
-                                <img src="img/unreal2.png" alt="Unreal" height="250px" width="400px">
+                                <img src="img/unreal.png" alt="Unreal" height="250px" width="400px">
                                 <div class="overlay">
-                                    <h4><a href="#">Preview</a></h4>
-                                    <h4><a href="#">Source Code</a></h4>
+                                    <a href="#"><button class="btn3">Preview</button></a>
+                                    <a href="#"><button class="btn3">Source Code</button></a>
                                 </div>
                             </div>
 
                             <div class="projects-item">
                                 <img src="img/JavaScript.png" alt="Unreal" height="250px" width="400px">
                                 <div class="overlay">
-                                    <h4><a href="#">Preview</a></h4>
-                                    <h4><a href="#">Source Code</a></h4>
+                                    <a href="#"><button class="btn3">Preview</button></a>
+                                    <a href="#"><button class="btn3">Source Code</button></a>
                                 </div>
                             </div>
 
@@ -227,16 +189,16 @@
                             <div class="projects-item">
                                 <img src="img/Zpotify.png" alt="Unreal" height="250px" width="400px">
                                 <div class="overlay">
-                                    <h4><a href="#">Preview</a></h4>
-                                    <h4><a href="#">Source Code</a></h4>
+                                    <a href="#"><button class="btn3">Preview</button></a>
+                                    <a href="#"><button class="btn3">Source Code</button></a>
                                 </div>
                             </div>
 
                             <div class="projects-item">
-                                <img src="img/JavaScript.png" alt="Unreal" height="250px" width="400px">
+                                <img src="img/Runaway.png" alt="Unreal" height="250px" width="400px">
                                 <div class="overlay">
-                                    <h4><a href="#">Preview</a></h4>
-                                    <h4><a href="#">Source Code</a></h4>
+                                    <a href="#"><button class="btn3">Preview</button></a>
+                                    <a href="#"><button class="btn3">Source Code</button></a>
                                 </div>
                             </div>
 
@@ -253,18 +215,18 @@
                         <div class="projects-row">
 
                             <div class="projects-item">
-                                <img src="img/unreal2.png" alt="Unreal" height="250px" width="400px">
+                                <img src="img/Zomwork.png" alt="Unreal" height="250px" width="400px">
                                 <div class="overlay">
-                                    <h4><a href="#">Preview</a></h4>
-                                    <h4><a href="#">Source Code</a></h4>
+                                    <a href="#"><button class="btn3">Preview</button></a>
+                                    <a href="#"><button class="btn3">Source Code</button></a>
                                 </div>
                             </div>
 
                             <div class="projects-item">
                                 <img src="img/unreal.png" alt="Unreal" height="250px" width="400px">
                                 <div class="overlay">
-                                    <h4><a href="#">Preview</a></h4>
-                                    <h4><a href="#">Source Code</a></h4>
+                                    <a href="#"><button class="btn3">Preview</button></a>
+                                    <a href="#"><button class="btn3">Source Code</button></a>
                                 </div>
                             </div>
 
@@ -277,16 +239,16 @@
                             <div class="projects-item">
                                 <img src="img/unreal.png" alt="Unreal" height="250px" width="400px">
                                 <div class="overlay">
-                                    <h4><a href="#">Preview</a></h4>
-                                    <h4><a href="#">Source Code</a></h4>
+                                    <a href="#"><button class="btn3">Preview</button></a>
+                                    <a href="#"><button class="btn3">Source Code</button></a>
                                 </div>
                             </div>
 
                             <div class="projects-item">
                                 <img src="img/unreal.png" alt="Unreal" height="250px" width="400px">
                                 <div class="overlay">
-                                    <h4><a href="#">Preview</a></h4>
-                                    <h4><a href="#">Source Code</a></h4>
+                                    <a href="#"><button class="btn3">Preview</button></a>
+                                    <a href="#"><button class="btn3">Source Code</button></a>
                                 </div>
                             </div>
 
@@ -305,16 +267,16 @@
                             <div class="projects-item">
                                 <img src="img/JavaScript.png" alt="Unreal" height="250px" width="400px">
                                 <div class="overlay">
-                                    <h4><a href="#">Preview</a></h4>
-                                    <h4><a href="#">Source Code</a></h4>
+                                    <a href="#"><button class="btn3">Preview</button></a>
+                                    <a href="#"><button class="btn3">Source Code</button></a>
                                 </div>
                             </div>
 
                             <div class="projects-item">
                                 <img src="img/JavaScript.png" alt="Unreal" height="250px" width="400px">
                                 <div class="overlay">
-                                    <h4><a href="#">Preview</a></h4>
-                                    <h4><a href="#">Source Code</a></h4>
+                                    <a href="#"><button class="btn3">Preview</button></a>
+                                    <a href="#"><button class="btn3">Source Code</button></a>
                                 </div>
                             </div>
 
@@ -327,16 +289,16 @@
                             <div class="projects-item">
                                 <img src="img/JavaScript.png" alt="Unreal" height="250px" width="400px">
                                 <div class="overlay">
-                                    <h4><a href="#">Preview</a></h4>
-                                    <h4><a href="#">Source Code</a></h4>
+                                    <a href="#"><button class="btn3">Preview</button></a>
+                                    <a href="#"><button class="btn3">Source Code</button></a>
                                 </div>
                             </div>
 
                             <div class="projects-item">
                                 <img src="img/JavaScript.png" alt="Unreal" height="250px" width="400px">
                                 <div class="overlay">
-                                    <h4><a href="#">Preview</a></h4>
-                                    <h4><a href="#">Source Code</a></h4>
+                                    <a href="#"><button class="btn3">Preview</button></a>
+                                    <a href="#"><button class="btn3">Source Code</button></a>
                                 </div>
                             </div>
                         </div>

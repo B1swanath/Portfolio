@@ -58,7 +58,7 @@ nav a{
     border-bottom: 3px solid transparent;
 }
 
-nav a:hover, nav a.nav-home{
+nav a:hover{
     color: crimson;
     border-bottom: 3px solid crimson;
 }
@@ -111,7 +111,7 @@ nav button:hover{
         margin: 0 0 1rem 0;
     }
 
-    nav a:hover, nav a.nav-home{
+    nav a:hover{
         padding: 1rem;
         border-radius: 0.5rem;
         border-bottom: 0.5rem solid crimson;
@@ -125,6 +125,7 @@ nav button:hover{
     }
 }
 
+/* HOME */
 section{
     min-height: 100vh;
     padding: 5rem 9% 5rem;
@@ -139,7 +140,7 @@ section{
 }
 
 .home .home-content h1{
-    font-size: 6rem;
+    font-size: 5.5rem;
     font-weight: 700;
     line-height: 1.3;
 }
@@ -297,6 +298,7 @@ span{
     }
 }
 
+/* ABOUT-ME */
 
 .about{
     display: flex;
@@ -304,7 +306,6 @@ span{
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    /* background-color: black; */
     padding-bottom: 6rem;
 }
 
@@ -312,6 +313,14 @@ span{
     font-size: 5rem;
     margin-bottom: 3rem;
     text-align: center;
+}
+
+.about-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .about-img{
@@ -453,7 +462,9 @@ span{
 
 .skills .skills-row{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .skills-row .skills-item{
@@ -475,12 +486,67 @@ span{
     color: white;
     transition: 0.5rem;
 }
-.skills-item i:hover{
-    color: crimson;
+
+
+.skills-item:hover .bxl-html5{
+    color: #e44d26;  
+}
+.skills-item:hover .bxl-css3{
+    color: #1572b6;  
+}
+.skills-item:hover .bxl-bootstrap{
+    color: #7811f7;  
+}
+.skills-item:hover .bxl-javascript{
+    color: #e6a329;  
+}
+.skills-item:hover .bxl-react{
+    color: #58c4dc;  
+}
+.skills-item:hover .bxl-wordpress{
+    background-color: #21759b;
+    border-radius: 50%; 
+}
+
+/* figma */
+
+.skills-item .icon-figma{
+    display: none;
+}
+.skills-item:hover .icon-figma{
+    display: block;     
+}
+.skills-item:hover .bxl-figma{
+    display: none; 
+}
+
+/* Adobe-Ps */
+
+.skills-item .icon-Ps-c{
+    display: none;
+}
+.skills-item:hover .icon-Ps-c{
+    display: block;
+}
+.skills-item:hover .icon-Ps-bw{
+    display: none;
+}
+
+/* Adobe-Ai */
+
+.skills-item .icon-Ai-c{
+    display: none;
+}
+.skills-item:hover .icon-Ai-c{
+    display: block;
+}
+.skills-item:hover .icon-Ai-bw{
+    display: none;
 }
 
 .skills-item span{
     text-align: center;
+    font-size: 1.5rem;
 }
 
 /* PROJECTS */
@@ -591,4 +657,34 @@ span{
     width: 100%;
     display: flex;
     justify-content: space-around;
+}
+
+.projects-item img{
+    border-radius: 15px;
+}
+.projects-item:hover img{
+    border: 2px solid crimson;
+    box-shadow: 1px 1px 25px 0 crimson;
+}
+
+.btn3{
+    display: inline-block;
+    padding: 0.5rem 1.8rem;
+    background-color: transparent;
+    border-radius: 4rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: crimson;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid crimson;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn3:hover{
+    transform: scale3d(1.03);
+    background-color: crimson;
+    color: black;
+    box-shadow: 0 0 10px crimson;
 }

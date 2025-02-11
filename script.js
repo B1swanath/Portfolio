@@ -17,18 +17,14 @@ function openPop() {
 
 let currentSlide = 0;
 
-// Function to move the slide
 function moveSlide(direction) {
     const slides = document.querySelectorAll('.projects-list');
     const totalSlides = slides.length;
     
-    // Update the current slide index based on direction
     currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
     
-    // Calculate the offset for the carousel slide movement
     const offset = -currentSlide * 100;
     
-    // Apply the transformation to move the carousel
     document.querySelector('.projects-slides').style.transform = `translateX(${offset}%)`;
 }
 
