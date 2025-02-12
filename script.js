@@ -1,15 +1,14 @@
+// Menu
+
+// function menud() {
+//     document.getElementById("nav a").classList.toggle("show");
+// }
+
 // Popup
 
 function openPop() {
-    const popDialog =
-        document.getElementById(
-            "popupDialog"
-        );
-    popDialog.style.visibility =
-        popDialog.style.visibility ===
-            "visible"
-            ? "hidden"
-            : "visible";
+    const popDialog = document.getElementById("popupDialog");
+    popDialog.style.visibility = popDialog.style.visibility === "visible" ? "hidden" : "visible";
 }
 
 
@@ -31,7 +30,7 @@ function moveSlide(direction) {
 
 
 
-
+// filter
 
 {/* <div class="portfolio__area-1 pt-145" id="portfolio">
             <div class="container">
@@ -85,7 +84,7 @@ function moveSlide(direction) {
 
 
 
-
+I specialize in crafting responsive and dynamic web experiences using HTML, CSS, and JavaScript, ensuring websites are visually appealing and user-friendly. With proficiency in Bootstrap and React, I build modern, mobile-first, and high-performance interfaces. My experience extends to WordPress, where I create custom themes and plugins to deliver tailored solutions. For design, I utilize Figma to create seamless user interfaces and Adobe Photoshop and Illustrator for crafting visually engaging graphics and assets. Combining these skills allows me to deliver both functional and aesthetic websites that are optimized for user experience.
 
 
 
@@ -117,3 +116,83 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 }); */}
+
+
+
+
+
+// dropdown 
+
+// https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_onclick_dropdown
+
+// <!DOCTYPE html>
+// <html>
+// <head>
+// <style>
+// .dropbtn {
+//   background-color: #4CAF50;
+//   color: white;
+//   padding: 16px;
+//   font-size: 16px;
+//   border: none;
+//   cursor: pointer;
+// }
+
+// .dropbtn:hover, .dropbtn:focus {
+//   background-color: #3e8e41;
+// }
+
+// .dropdown {
+//   position: relative;
+//   display: inline-block;
+// }
+
+// .dropdown-content {
+//   display: none;
+//   position: absolute;
+//   background-color: #f9f9f9;
+//   min-width: 160px;
+//   overflow: auto;
+//   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+// }
+
+// .dropdown-content a {
+//   color: black;
+//   padding: 12px 16px;
+//   text-decoration: none;
+//   display: block;
+// }
+
+// .dropdown-content a:hover {background-color: #f1f1f1}
+
+// .show {display:block;}
+// </style>
+// </head>
+// <body>
+
+// <h1>HTML DOM Events</h1>
+// <h2>The onclick Event</h2>
+
+// <p>Click on the button to open the dropdown menu.</p>
+
+// <div class="dropdown">
+//   <button id="myBtn" class="dropbtn" onclick="myb()">Dropdown</button>
+//   <div id="myDropdown" class="dropdown-content">
+//     <a href="#home">Home</a>
+//     <a href="#about">About</a>
+//     <a href="#contact">Contact</a>
+//   </div>
+// </div>
+
+// <script>
+// // Get the button, and when the user clicks on it, execute myFunction
+// //document.getElementById("myBtn").onclick = function() {myFunction()};
+
+// /* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+// function myb() {
+//   document.getElementById("myDropdown").classList.toggle("show");
+// }
+// </script>
+
+// </body>
+// </html>

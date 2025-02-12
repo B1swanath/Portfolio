@@ -16,15 +16,18 @@
     <!-- NAVBAR -->
 
     <header>
-        <a href="#" class="nav-logo">Biswanath</a>
+        <a href="#home" class="nav-logo">Biswanath</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <!-- <i class='bx bx-x'></i> -->
 
         <nav>
-            <a href="#home" class="nav-home">Home</a>
-            <a href="#about" >About me</a>
-            <a href="#skills" >Skills</a>
-            <a href="#projects" >Projects</a>
-            <a href="#" >Contact me</a>
-            <button>Download</button>
+            <a class="nav-home active" href="#home" >Home</a>
+            <a class="nav-home" href="#about" >About me</a>
+            <a class="nav-home" href="#skills" >Skills</a>
+            <a class="nav-home" href="#projects" >Projects</a>
+            <a class="nav-home" href="#contact" >Contact me</a>
+            <a class="abtn" href="img/Biswanath-Resume.pdf" download=""><button>Download</button></a>    
         </nav>
     </header>
 
@@ -167,8 +170,8 @@
                             <div class="projects-item">
                                 <img src="img/unreal.png" alt="Unreal" height="250px" width="400px">
                                 <div class="overlay">
-                                    <a href="#"><button class="btn3">Preview</button></a>
-                                    <a href="#"><button class="btn3">Source Code</button></a>
+                                    <a target="_blank" href="https://new-unreal-engine.vercel.app/"><button class="btn3">Preview</button></a>
+                                    <a target="_blank" href="https://github.com/B1swanath/New-Unreal_Engine.git"><button class="btn3">Source Code</button></a>
                                 </div>
                             </div>
 
@@ -312,6 +315,38 @@
             <button class="carousel-control-next" onclick="moveSlide(1)"><i class='bx bx-right-arrow-circle' ></i></button>
         
         </div>
+    </section>
+
+    <!-- Contact me -->
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <div class="contact-info">
+            <div class="mail">
+                <i class='bx bxl-gmail'> biswanathtudu100@gmail.com</i>
+            </div>
+            <div class="phone">
+                <i class='bx bx-phone'> +91 8074992944</i>
+            </div>
+        </div>
+        <form action="">
+            <div class="input-grp">
+                <div class="input-box">
+                    <input type="text" placeholder="Enter Your Name">
+                    <input type="email" placeholder="Enter Your Email">
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Phone Number">
+                    <input type="text" placeholder="Subject">
+                </div>
+            </div>
+
+            <div class="input-group-2">
+                <textarea name="" id="" cols="60" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn4">
+            </div>
+        </form>
     </section>
 </body>
 </html>
