@@ -740,6 +740,10 @@ span{
 }
 
 @media(max-width: 995px){
+    .projects{
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
     .projects-menu{
         margin: 1rem 0rem;
     }
@@ -753,7 +757,7 @@ span{
     }
     .projects-item img{
         height: 180px;
-        width: 250px;
+        width: 260px;
     }
     .carousel-control-prev, .carousel-control-next {
         transform: translateY(38.5rem);
