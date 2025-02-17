@@ -757,7 +757,7 @@ span{
     }
     .projects-item img{
         height: 180px;
-        width: 260px;
+        width: 255px;
     }
     .carousel-control-prev, .carousel-control-next {
         transform: translateY(38.5rem);
