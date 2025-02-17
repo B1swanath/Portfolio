@@ -1,8 +1,21 @@
 // Menu
 
-// function menud() {
-//     document.getElementById("nav a").classList.toggle("show");
-// }
+function toggleMenu() {
+    const menuIcon = document.getElementById("menu-icon");
+    const closeMenuIcon = document.getElementById("close-menu-icon");
+    const nav = document.querySelector("nav");
+
+    if (nav.classList.contains("active")) {
+        nav.classList.remove("active");
+        menuIcon.style.display = "block";
+        closeMenuIcon.style.display = "none";
+    } else {
+        nav.classList.add("active");
+        menuIcon.style.display = "none";
+        closeMenuIcon.style.display = "block";
+    }
+}
+
 
 // Popup
 

@@ -68,6 +68,9 @@ nav .nav-home:hover{
     color: white;
     display: none;
 }
+#close-menu-icon {
+    display: none;
+}
 
 nav button{
     font-size: 1.8rem;
@@ -94,9 +97,9 @@ nav button:hover{
     #menu-icon{
         display: block;
     }
-    .show{display:block;}
+    /* .show{display:block;} */
 
-    nav{
+    /* nav{
         position: absolute;
         top: 100%;
         right: 0;
@@ -109,16 +112,31 @@ nav button:hover{
         border-bottom-left-radius: 1rem;
         padding: 1rem solid;
         background-color: #161616;
+    } */
+    nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0,0,0, 0.8);
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    } 
+    nav.active {
+        display: flex;
     }
 
     nav .nav-home{
         display: block;
+        margin-left: 0;
     }
 
     nav a{
         display: block;
         font-size: 2rem;
-        margin: 0 0 1rem 0;
+        margin: 1rem 0;
         text-decoration: none;
     }
 
@@ -131,8 +149,16 @@ nav button:hover{
     nav button{
         display: block;
         font-size: 2rem;
-        width: 100%;
+        /* width: 100%; */
         margin: 0.5rem;
+    }
+
+    #close-menu-icon {
+        display: none;
+        position: absolute;
+        top: 25px;
+        right: 40px;
+        font-size: 3.6rem;
     }
 }
 
@@ -726,15 +752,15 @@ span{
         gap: 1rem;
     }
     .projects-item img{
-        height: 200px;
-        width: 270px;
+        height: 180px;
+        width: 250px;
     }
     .carousel-control-prev, .carousel-control-next {
-        transform: translateY(42.5rem);
+        transform: translateY(38.5rem);
     }
-    .overlay{
+    /* .overlay{
         flex-direction: column;
-    }
+    } */
     .btn3{
         padding: 0.25rem 0.9rem;
         font-size: 1rem;

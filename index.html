@@ -18,8 +18,8 @@
     <header>
         <a href="#home" class="nav-logo">Biswanath</a>
 
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <!-- <i class='bx bx-x'></i> -->
+        <i class='bx bx-menu' id="menu-icon" onclick="toggleMenu()"></i>
+        <i class='bx bx-x' id="close-menu-icon" onclick="toggleMenu()"></i>
 
         <nav>
             <a class="nav-home active" href="#home" >Home</a>
@@ -369,6 +369,7 @@
     
         </div>
     </section>
+    
     <script>
         // Carousel functionality
         let currentSlide = 0;
