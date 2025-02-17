@@ -748,8 +748,8 @@ span{
         margin: 1rem 0rem;
     }
     .projects-list{
-        padding-left: 3.5rem;
-        padding-right: 3.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .projects-row{
         flex-direction: column;
