@@ -713,6 +713,40 @@ span{
     box-shadow: 0 0 10px crimson;
 }
 
+@media(max-width: 995px){
+    .projects-menu{
+        margin: 1rem 0rem;
+    }
+    .projects-list{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+    .projects-row{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .projects-item img{
+        height: 200px;
+        width: 270px;
+    }
+    .carousel-control-prev, .carousel-control-next {
+        transform: translateY(42.5rem);
+    }
+    .overlay{
+        flex-direction: column;
+    }
+    .btn3{
+        padding: 0.25rem 0.9rem;
+        font-size: 1rem;
+    }
+    .carousel-control-prev .bx{
+        color: crimson;
+    }
+    .carousel-control-next .bx{
+        color: crimson;
+    }
+}
+
 /* new */
 
 /* Contact */
@@ -808,4 +842,17 @@ span{
     background-color: crimson;
     color: black;
     box-shadow: 0 0 10px crimson;
+}
+
+
+
+@media(max-width: 995px){
+    .contact-info{
+        flex-direction: column;
+        margin: 0 1rem;
+    }
+    .contact form{
+        flex-direction: column;
+        margin: 1rem 2.5rem 2.5rem;
+    }
 }
