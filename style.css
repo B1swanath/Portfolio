@@ -741,15 +741,15 @@ span{
 
 @media(max-width: 995px){
     .projects{
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .projects-menu{
         margin: 1rem 0rem;
     }
     .projects-list{
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
     }
     .projects-row{
         flex-direction: column;
