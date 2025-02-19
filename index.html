@@ -290,8 +290,8 @@
                                     <iconify-icon icon="skill-icons:illustrator" width="25" height="25"></iconify-icon>
                                 </div>
                                 <div class="overlay">
-                                    <a href="#"><button class="btn3">Preview</button></a>
-                                    <a href="#"><button class="btn3">Source Code</button></a>
+                                    <a target="_blank" href="img/Flyer-1.jpg"><button class="btn3">Preview</button></a>
+                                    <!-- <a href="#"><button class="btn3">Source Code</button></a> -->
                                 </div>
                             </div>
                             <div class="projects-item design">
@@ -301,8 +301,8 @@
                                     <iconify-icon icon="skill-icons:illustrator" width="25" height="25"></iconify-icon>
                                 </div>
                                 <div class="overlay">
-                                    <a href="#"><button class="btn3">Preview</button></a>
-                                    <a href="#"><button class="btn3">Source Code</button></a>
+                                    <a target="_blank" href="img/Flyer-2.jpg"><button class="btn3">Preview</button></a>
+                                    <!-- <a href="#"><button class="btn3">Source Code</button></a> -->
                                 </div>
                             </div>
                         </div>
@@ -316,8 +316,8 @@
                                     <iconify-icon icon="skill-icons:illustrator" width="25" height="25"></iconify-icon>
                                 </div>
                                 <div class="overlay">
-                                    <a href="#"><button class="btn3">Preview</button></a>
-                                    <a href="#"><button class="btn3">Source Code</button></a>
+                                    <a target="_blank" href="img/Flyer-3.jpg"><button class="btn3">Preview</button></a>
+                                    <!-- <a href="#"><button class="btn3">Source Code</button></a> -->
                                 </div>
                             </div>
                             <div class="projects-item design">
@@ -327,8 +327,8 @@
                                     <iconify-icon icon="skill-icons:illustrator" width="25" height="25"></iconify-icon>
                                 </div>
                                 <div class="overlay">
-                                    <a href="#"><button class="btn3">Preview</button></a>
-                                    <a href="#"><button class="btn3">Source Code</button></a>
+                                    <a target="_blank" href="#"><button class="btn3">Preview</button></a>
+                                    <!-- <a href="#"><button class="btn3">Source Code</button></a> -->
                                 </div>
                             </div>
                         </div>
@@ -346,7 +346,7 @@
                                 </div>
                                 <div class="overlay">
                                     <a target="_blank" href="https://www.figma.com/proto/tmDlmS4yknuzwUBTGhs7qD/Fresh?node-id=43-4&starting-point-node-id=43%3A4&t=KBhDApM1R8BCrhu7-1"><button class="btn3">Preview</button></a>
-                                    <a target="_blank" href="#"><button class="btn3">Source Code</button></a>
+                                    <!-- <a target="_blank" href="#"><button class="btn3">Source Code</button></a> -->
                                 </div>
                             </div>
                             <div class="projects-item figma">
@@ -356,7 +356,7 @@
                                 </div>
                                 <div class="overlay">
                                     <a target="_blank" href="#"><button class="btn3">Preview</button></a>
-                                    <a target="_blank" href="#"><button class="btn3">Source Code</button></a>
+                                    <!-- <a target="_blank" href="#"><button class="btn3">Source Code</button></a> -->
                                 </div>
                             </div>
                         </div>
@@ -443,20 +443,21 @@
                 <h4>+91 8074992944</h4>
             </div>
         </div>
-        <form action="">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="2852f95b-930a-4f33-a8cf-c9e1b21e6ca4">
             <div class="input-grp">
                 <div class="input-box">
-                    <input type="text" placeholder="Enter Your Name">
-                    <input type="email" placeholder="Enter Your Email">
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+                    <input type="email" name="email" placeholder="Enter Your Email" required>
                 </div>
                 <div class="input-box">
-                    <input type="number" placeholder="Phone Number">
-                    <input type="text" placeholder="Subject">
+                    <input type="number" name="number" placeholder="Phone Number">
+                    <input type="text" name="subject" placeholder="Subject">
                 </div>
             </div>
 
             <div class="input-group-2">
-                <textarea name="" id="" cols="60" rows="8.5" placeholder="Your Message"></textarea>
+                <textarea name="message" id="" cols="60" rows="8.5" placeholder="Your Message" required></textarea>
                 <input type="submit" value="Send Message" class="btn4">
             </div>
         </form>
